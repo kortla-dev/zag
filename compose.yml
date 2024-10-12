@@ -1,0 +1,13 @@
+services:
+  node-app:
+    build:
+      context: ../Node
+      dockerfile: Dockerfile
+    ports:
+      - ${port}:${port} # Maps port 8080 of the container to port 8080 on the host
+    environment:
+      - PORT=${port}   # Sets the environment variable for the container
+  backend-app:
+    build:
+      context: ../Backend
+      dockerfile: Dockerfile
