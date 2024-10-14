@@ -1,6 +1,6 @@
 services:
   node-app:
-    image: ghcr.io/tropicsatern36/zag-frontend:latest
+    image: ghcr.io/zag-prj/zag-frontend:latest
     container_name: zad-frontend
     environment:
       - PORT=${NODE_PORT}   # Sets the environment variable for the container
