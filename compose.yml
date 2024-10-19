@@ -14,7 +14,7 @@ services:
     environment:
       - ASP_PORT=${ASP_PORT}           # Set ASP.NET environment variable
       - POSTGRES_HOST=${POSTGRES_HOST}  # Set the PostgreSQL host
-      - POSTGRES_PORT=${POSTGRES_PORT}  # Set the PostgreSQL port
+      - POSTGRES_PORT=5432  # Set the PostgreSQL port
       - POSTGRES_USER=${POSTGRES_USER}  # Set PostgreSQL user
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}  # Set PostgreSQL password
       - POSTGRES_DB=${POSTGRES_DB}      # Set PostgreSQL database name
